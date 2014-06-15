@@ -1,7 +1,7 @@
 <script>
-    function Deck() { //creating a function to represent the deck
-        this.cards = []; // an array meant to contain the cards in the deck
-        this.count = function() { //count of cards defined by length of array
+    function Deck() { 
+        this.cards = []; 
+        this.count = function() { 
             this.cards.length;
         }
         this.init = function() {
@@ -13,10 +13,10 @@
         }
     }
  
-    function Card(rank, suit) { //function defining individual cards
-        this.rank = rank; //number of the card
-        this.suit = suit; //suit of the card
-            this.show = function() {//function meant to show value of current card
+    function Card(rank, suit) { 
+        this.rank = rank; 
+        this.suit = suit; 
+            this.show = function() {
                 console.log(this.rank + " of " + this.suit);
             }
     }
