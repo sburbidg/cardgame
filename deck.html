@@ -1,0 +1,26 @@
+<script>
+    function Deck() { 
+        this.cards = []; 
+        this.count = function() { 
+            this.cards.length;
+        }
+        this.init = function() {
+            for (s =  1; s <= 4; s++) {
+                    for (r = 1; r <= 13; r++) {
+                    this.cards.push(new Card(r, s))
+                    }       
+                }
+        }
+    }
+ 
+    function Card(rank, suit) { 
+        this.rank = rank; 
+        this.suit = suit; 
+            this.show = function(){ 
+                console.log(this.rank + " of " + this.suit);
+            }
+    }
+
+  d = new Deck();
+  d.init();
+</script>
